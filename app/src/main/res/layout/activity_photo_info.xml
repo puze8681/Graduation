@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sunrin.myapplication.Activity.PhotoInfoActivity">
+    <include layout="@layout/toolbar_basic"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--<TextView-->
+            <!--android:id="@+id/txt_date"-->
+            <!--android:gravity="center|left"-->
+            <!--tools:text="2018.06.12"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/txt_album"-->
+            <!--android:gravity="center|left"-->
+            <!--tools:text="졸업사진첩"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp" />-->
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/add_photo_image_box"
+            android:id="@+id/img_image"
+            app:srcCompat="@drawable/ic_launcher_foreground"
+            android:layout_weight="6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <ScrollView
+            android:layout_marginTop="8dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:background="@drawable/login_edittext_box"
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="left"
+                android:id="@+id/txt_summary"
+                tools:text=
+                    "
+                    사진에 대한 설명입니다
+                    설명 맞구요
+                    설명 맞다니까요
+                    진짜로 설명이라니까 몇번을 얘기해요
+                    왜 안밎지?
+                    진짜 설명 맞다니까
+                    "
+                android:hint="사진에 대한 설명입니다"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.sunrin.myapplication.Activity.LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_margin="16dp">
+        <android.support.v4.widget.Space
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <android.support.design.widget.TextInputLayout
+            android:paddingTop="12dp"
+            android:textColorHint="@color/mainRed"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:background="@drawable/login_edittext_box"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            app:hintTextAppearance="@style/TextLabel"
+            android:layout_height="0dp">
+            <android.support.design.widget.TextInputEditText
+                android:textColor="@color/black"
+                android:backgroundTint="@color/mainRed"
+                android:id="@+id/edit_school"
+                android:gravity="center|left"
+                android:hint="학교"
+                android:textSize="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.v4.widget.Space
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <android.support.design.widget.TextInputLayout
+            android:paddingTop="12dp"
+            android:textColorHint="@color/mainRed"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:background="@drawable/login_edittext_box"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            app:hintTextAppearance="@style/TextLabel"
+            android:layout_height="0dp">
+            <android.support.design.widget.TextInputEditText
+                android:textColor="@color/black"
+                android:backgroundTint="@color/mainRed"
+                android:inputType="number"
+                android:id="@+id/edit_identity"
+                android:gravity="center|left"
+                android:hint="학번"
+                android:textSize="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.v4.widget.Space
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <android.support.design.widget.TextInputLayout
+            android:paddingTop="12dp"
+            android:textColorHint="@color/mainRed"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:background="@drawable/login_edittext_box"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            app:hintTextAppearance="@style/TextLabel"
+            android:layout_height="0dp">
+            <android.support.design.widget.TextInputEditText
+                android:textColor="@color/black"
+                android:backgroundTint="@color/mainRed"
+                android:inputType="number"
+                android:id="@+id/edit_birth"
+                android:gravity="center|left"
+                android:hint="생일 (ex. 20000601)"
+                android:textSize="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.v4.widget.Space
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <android.support.design.widget.TextInputLayout
+            android:paddingTop="12dp"
+            android:textColorHint="@color/mainRed"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:background="@drawable/login_edittext_box"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            app:hintTextAppearance="@style/TextLabel"
+            android:layout_height="0dp">
+            <android.support.design.widget.TextInputEditText
+                android:textColor="@color/black"
+                android:backgroundTint="@color/mainRed"
+                android:inputType="textPassword"
+                android:id="@+id/edit_password"
+                android:gravity="center|left"
+                android:hint="비밀번호 (ex. 8 ~ 16 자리)"
+                android:textSize="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.v4.widget.Space
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <Button
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/login_button_box"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:id="@+id/btn_login"
+            android:text="로그인"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <Button
+            android:layout_marginTop="8dp"
+            android:background="@drawable/login_button_box"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:id="@+id/btn_register"
+            android:text="계정 생성"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <android.support.v4.widget.Space
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+    </LinearLayout>
+</LinearLayout>
